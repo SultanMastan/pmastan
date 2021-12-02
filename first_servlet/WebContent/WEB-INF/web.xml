@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://JAVA.sun.com/xml/ns/javaee"
+	xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
+	<display-name>first_servlet</display-name>
+	<welcome-file-list>
+		<welcome-file>index2.jsp</welcome-file>
+	</welcome-file-list>
+	<!-- <servlet> <servlet-name>s11</servlet-name> <servlet-class>com.requestdispatcher.Login</servlet-class> 
+		</servlet> <servlet-mapping> <servlet-name>s11</servlet-name> <url-pattern>/servlet1</url-pattern> 
+		</servlet-mapping> <servlet> <servlet-name>s12</servlet-name> <servlet-class>com.requestdispatcher.WelcomeServlet</servlet-class> 
+		</servlet> <servlet-mapping> <servlet-name>s12</servlet-name> <url-pattern>/servlet2</url-pattern> 
+		</servlet-mapping> -->
+
+	<!-- <servlet> <servlet-name>s14</servlet-name> <servlet-class>com.servletconfig.DemoServlet</servlet-class> 
+		<init-param> <param-name>name</param-name> <param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value> 
+		</init-param> </servlet> <servlet-mapping> <servlet-name>s14</servlet-name> 
+		<url-pattern>/servlet1</url-pattern> </servlet-mapping> -->
+	<!-- <servlet> <servlet-name>s15</servlet-name> <servlet-class>com.servletcontext.DemoServlet</servlet-class> 
+		</servlet> <context-param> <param-name>name1</param-name> <param-value>sun.jdbc.odbc.JdbcOdbcDriver1</param-value> 
+		</context-param> <servlet-mapping> <servlet-name>s15</servlet-name> <url-pattern>/servlet2</url-pattern> 
+		</servlet-mapping> -->
+
+	<!-- <servlet> <servlet-name>s18</servlet-name> <servlet-class>com.session.cookie.FirstServlet</servlet-class> 
+		</servlet> <servlet-mapping> <servlet-name>s18</servlet-name> <url-pattern>/servlet1</url-pattern> 
+		</servlet-mapping> <servlet> <servlet-name>s19</servlet-name> <servlet-class>com.session.cookie.SecondServlet</servlet-class> 
+		</servlet> <servlet-mapping> <servlet-name>s19</servlet-name> <url-pattern>/servlet2</url-pattern> 
+		</servlet-mapping> -->
+	<!-- <servlet> <description></description> <display-name>LoginServlet</display-name> 
+		<servlet-name>LoginServlet</servlet-name> <servlet-class>com.session.cookie.loginandlogout.LoginServlet 
+		</servlet-class> </servlet> <servlet-mapping> <servlet-name>LoginServlet</servlet-name> 
+		<url-pattern>/LoginServlet</url-pattern> </servlet-mapping> <servlet> <description></description> 
+		<display-name>ProfileServlet</display-name> <servlet-name>ProfileServlet</servlet-name> 
+		<servlet-class>com.session.cookie.loginandlogout.ProfileServlet </servlet-class> 
+		</servlet> <servlet-mapping> <servlet-name>ProfileServlet</servlet-name> 
+		<url-pattern>/ProfileServlet</url-pattern> </servlet-mapping> <servlet> <description></description> 
+		<display-name>LogoutServlet</display-name> <servlet-name>LogoutServlet</servlet-name> 
+		<servlet-class>com.session.cookie.loginandlogout.LogoutServlet </servlet-class> 
+		</servlet> <servlet-mapping> <servlet-name>LogoutServlet</servlet-name> <url-pattern>/LogoutServlet</url-pattern> 
+		</servlet-mapping> -->
+	<servlet>
+		<servlet-name>s1</servlet-name>
+		<servlet-class>com.session.hiddenformfield.FirstServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>s1</servlet-name>
+		<url-pattern>/servlet1</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>s2</servlet-name>
+		<servlet-class>com.session.hiddenformfield.SecondServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>s2</servlet-name>
+		<url-pattern>/servlet2</url-pattern>
+	</servlet-mapping>
+</web-app>
